@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Login
+    p You're about to learn a lot about me. Let me learn a little about you. I only ask for your email address and I promise not to spam you. You can login with your google account below
+    .form-group
+      .offset-sm-3.col-md-7.pl-2
+        hr
+    .form-group
+      .offset-sm-3.col-md-7.pl-2
+        a.btn.btn-block.btn-google.btn-social(href='/auth/google')
+          i.fab.fa-google-plus-g.fa-xs
+          | Sign in with Google
