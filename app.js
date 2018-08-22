@@ -140,9 +140,15 @@ app.post('/account/profile', passportConfig.isAuthenticated, userController.post
 app.post('/account/password', passportConfig.isAuthenticated, userController.postUpdatePassword);
 app.post('/account/delete', passportConfig.isAuthenticated, userController.postDeleteAccount);
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
-app.get('/pull',(req, res) => {
+app.get('/pull',(req, res) => {// render pull page
   res.render('pull', {
     title: 'pull'
+  });
+});
+
+app.get('/push',(req, res) => {// render push page
+  res.render('push', {
+    title: 'push'
   });
 });
 /**
