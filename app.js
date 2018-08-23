@@ -151,6 +151,12 @@ app.get('/push',(req, res) => {// render push page
     title: 'push'
   });
 });
+
+app.get('/legs',(req, res) => {// render Legs page
+  res.render('legs', {
+    title: 'legs'
+  });
+});
 /**
  * API examples routes.
  */
